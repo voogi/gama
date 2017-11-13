@@ -1,15 +1,21 @@
+@background: rgb(33,36,19);
+@brighterBack: rgb(62,59,41);
+@textColor: rgb(169,168,139);
+@textColorBrighter: rgb(161,157,110);
+@highlightColor: rgb(111,107,50);
+
 div.header {
 
   height: 79px;
   line-height: 79px;
-  border-bottom: 1px solid rgba(255,255,255,.3);
+  border-bottom: 1px solid @brighterBack;
 
   div.menu-item {
     &:hover {
       cursor: pointer;
     }
     &.active {
-      color: white;
+      color: @highlightColor;
       font-weight: bold;
     }
     &.search {
@@ -18,7 +24,7 @@ div.header {
         content: "";
         width: 1px;
         height: 40px;
-        background-color: rgba(255,255,255,.3);
+        background-color: @brighterBack;
         top: 20px;
         left: 0;
       }
