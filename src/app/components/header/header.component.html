@@ -1,14 +1,23 @@
 <div class="row align-items-center header">
     <div class="col">
-        <h3>Gá-Major Bt LOGO TBD</h3>
+        <h3>Gá-Major Bt LOGO</h3>
     </div>
     <div class="col">
         <div class="row align-items-center text-center">
-            <div routerLink="main" routerLinkActive="active" class="col-2 menu-item">Főoldal</div>
-            <div routerLink="products" routerLinkActive="active" class="col-2 menu-item">Termékek</div>
-            <div class="col-2 menu-item">Képek</div>
-            <div class="col-2 menu-item">Elérhetőség</div>
-            <div class="col-2 menu-item search text-left"><i class="material-icons">search</i></div>
+            <div routerLink="main" routerLinkActive="active" class="col-2 col-md-2 menu-item">Főoldal</div>
+            <div routerLink="products" routerLinkActive="active" class="col-2 col-md-2 menu-item">Termékek</div>
+            <div class="col-2 col-md-2 menu-item">Képek</div>
+            <div class="col-2 col-md-2 menu-item">Elérhetőség</div>
+            <div class="col-4 col-md-4 menu-item search text-left">
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <input #searchField type="text" class="form-control" id="inlineFormInputGroup" placeholder="Keresés">
+                    <div (click)="onSearch(searchField.value)" class="input-group-addon"><i class="material-icons">search</i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
 </div>

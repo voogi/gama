@@ -10,6 +10,24 @@ div.header {
   line-height: 79px;
   border-bottom: 1px solid @brighterBack;
 
+  div.form-group {
+    margin-bottom: 0px!important;
+  }
+
+  i.material-icons {
+    line-height: unset;
+  }
+
+  input.form-control {
+    height: 40px;
+  }
+
+  div.input-group-addon {
+    height: 40px;
+    border: none!important;
+    background-color: @textColor;
+  }
+
   div.menu-item {
     &:hover {
       cursor: pointer;
@@ -28,15 +46,15 @@ div.header {
       }
     }
     &.search {
-      &:before {
-        position: absolute;
-        content: "";
-        width: 1px;
-        height: 40px;
-        background-color: @brighterBack;
-        top: 20px;
-        left: 0;
-      }
+      //&:before {
+      //  position: absolute;
+      //  content: "";
+      //  width: 1px;
+      //  height: 40px;
+      //  background-color: @brighterBack;
+      //  top: 20px;
+      //  left: 0;
+      //}
     }
   }
 }
