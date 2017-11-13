@@ -1,6 +1,6 @@
 @background: rgb(33,36,19);
-@brighterBack: rgb(62,59,41);
-@textColor: rgb(169,168,139);
+@brighterBack: #3e423b;
+@textColor: #f3d2b0;
 @textColorBrighter: rgb(161,157,110);
 @highlightColor: rgb(111,107,50);
 
@@ -9,6 +9,11 @@ div.header {
   height: 79px;
   line-height: 79px;
   border-bottom: 1px solid @brighterBack;
+  color: @textColor;
+  background: rgba(46, 74, 48, 0.51);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 
   div.form-group {
     margin-bottom: 0px!important;

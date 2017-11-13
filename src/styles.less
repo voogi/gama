@@ -2,9 +2,9 @@
 @import "~font-awesome/css/font-awesome.css";
 
 
-@background: rgb(33,36,19);
+@background: #3e423b;
 @brighterBack: rgb(62,59,41);
-@textColor: rgb(169,168,139);
+@textColor: #f3d2b0;
 @textColorBrighter: rgb(161,157,110);
 @highlightColor: rgb(111,107,50);
 
@@ -18,9 +18,12 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-
-  background: @background;
-  color: @textColorBrighter;
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-weight: 300;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: @textColor;
+  color: @background;
 }
 
 :focus {
