@@ -1,16 +1,56 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'gama-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.less'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'gama-products',
+    templateUrl: './products.component.html',
+    styleUrls: ['./products.component.less'],
+    encapsulation: ViewEncapsulation.None
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+    public categories: Array<any> = [
+        {
+            name: 'Védőeszköz'
+        },
+        {
+            name: 'Munkaruha'
+        },
+        {
+            name: 'Védőlábbelik'
+        },
+        {
+            name: 'Military ruházat'
+        },
+        {
+            name: 'Gázfegyverek'
+        },
+        {
+            name: 'Légpuskák'
+        },
+        {
+            name: 'Lőszerek'
+        },
+        {
+            name: 'Vadászruházat'
+        },
+        {
+            name: 'Bakancsok'
+        },
+        {
+            name: 'Övek'
+        },
+        {
+            name: 'Ajándéktárgyak'
+        },
+        {
+            name: 'Egyéb'
+        }
+    ];
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
 }
