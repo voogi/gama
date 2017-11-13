@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'gama-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.less']
 })
-export class AppComponent {
-  title = 'gama';
-}
+export class AppComponent {}
