@@ -4,7 +4,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
     selector: 'gama-products',
     templateUrl: './products.component.html',
     styleUrls: ['./products.component.less'],
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.Native
 })
 export class ProductsComponent implements OnInit {
 

@@ -16,6 +16,16 @@ div.header {
     }
     &.active {
       color: @highlightColor;
+      transition: all ease .3s;
+      &:after {
+        content: "";
+        position: absolute;
+        top:76px;
+        left: 0;
+        background: @brighterBack;
+        height: 6px;
+        width: 100%;
+      }
     }
     &.search {
       &:before {
