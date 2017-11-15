@@ -1,6 +1,6 @@
-@background: rgb(33,36,19);
-@brighterBack: #3e423b;
-@textColor: #f3d2b0;
+@background: rgba(46, 74, 48, 0.51);
+@brighterBack: #141f15;
+@textColor: #d4d4d4;
 @textColorBrighter: rgb(161,157,110);
 @highlightColor: rgb(111,107,50);
 
@@ -10,13 +10,21 @@ div.header {
   line-height: 79px;
   border-bottom: 1px solid @brighterBack;
   color: @textColor;
-  background: rgba(46, 74, 48, 0.51);
+  background: @background;
   position: absolute;
   width: 100%;
   z-index: 10;
 
   div.form-group {
     margin-bottom: 0px!important;
+  }
+
+  img.deer-logo {
+    height: 60px;
+  }
+
+  h3 {
+    margin-bottom: 0;
   }
 
   i.material-icons {
